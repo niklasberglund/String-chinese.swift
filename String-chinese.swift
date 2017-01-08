@@ -38,6 +38,18 @@ extension String {
                 chineseCount += 1
             case 194560...195103: // Unifiable variants
                 chineseCount += 1
+            case 40870...40883: // Interoperability with HKSCS standard
+                chineseCount += 1
+            case 40884...40891: // Interoperability with GB 18030 standard
+                chineseCount += 1
+            case 40892...40898: // Interoperability with commercial implementations
+                chineseCount += 1
+            case 40899: // Correction of mistaken unification
+                chineseCount += 1
+            case 40900...40902: // Interoperability with ARIB standard
+                chineseCount += 1
+            case 40903...40907: // Interoperability with HKSCS standard
+                chineseCount += 1
             default:
                 continue
             }
