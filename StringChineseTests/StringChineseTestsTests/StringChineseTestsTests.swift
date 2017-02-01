@@ -35,4 +35,11 @@ class StringChineseTestsTests: XCTestCase {
         
         XCTAssert(text.isChinese() == false, "English text identified as NOT written in Chinese")
     }
+    
+    func testJapaneseText() {
+        // Excerpt from http://www.gutenberg.org/files/39287/39287-h/39287-h.htm
+        let text = "次の日は日曜日で、デーリー・メールは休刊である。その日はのろのろと足を引きずるように過ぎた。月曜日、ジェフリー・ウエストはとてつもなく早起きをし、通りに出て、お気に入りの新聞を捜した。それを見つけると苦悶の欄……それだけを見た。火曜日も希望をすてずにまた早起きした。しかしそこで希望はついえた。カールトン・ホテルの女性は快く返事をくれなかったのだ。　失敗というわけか、と彼は思った。すべてを賭して大ばくちに出たが、見事にしくじった。彼女が彼のことを考えるとしても、せいぜい取るに足らぬ道化者、タブロイド紙の回し者と決めつけるくらいのものだ。彼は十分に彼女の侮蔑にあたいした。　水曜日は遅くまで寝ていた。デーリー・メールを急いでのぞこうとはしなかった。前日の失望があまりにも大きかったのだ。ひげを剃りはじめてからようやくアパートの管理人ウオルタースを呼びだし、朝刊を調達してきてもらった。　ウオルタースは高価な宝物を抱えて帰ってきた。というのはその日の苦悶の欄を、ウエストは白いシャボンを顔につけたまま、喜びにあふれて読んだからである。"
+        
+        XCTAssert(text.isChinese() == false, "Japanese text identified as NOT written in Chinese")
+    }
 }
