@@ -50,6 +50,8 @@ class StringChineseTestsTests: XCTestCase {
         XCTAssert(text.isChinese() == false, "Korean text identified as NOT written in Chinese")
     }
     
+    
+    /// Some special characters are part of both Japanese and Chinese. As of now those are not recognized as Chinese.
     func testChineseCharacterCount() {
         let count2 = "你好"
         let count3 = "惊叹号！"
