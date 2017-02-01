@@ -49,4 +49,14 @@ class StringChineseTestsTests: XCTestCase {
         
         XCTAssert(text.isChinese() == false, "Korean text identified as NOT written in Chinese")
     }
+    
+    func testChineseCharacterCount() {
+        let count2 = "你好"
+        let count3 = "惊叹号！"
+        let count4 = "你好，哦哦"
+        
+        XCTAssert(count2.chineseCharactersCount() == 2, "Chinese character count == 2")
+        XCTAssert(count3.chineseCharactersCount() == 3, "Chinese character count == 3")
+        XCTAssert(count4.chineseCharactersCount() == 4, "Chinese character count == 4")
+    }
 }
